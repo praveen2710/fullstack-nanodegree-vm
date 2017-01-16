@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1> Edit Restaurant Details </h1>
+
+<form action="{{url_for('editRestaurant',restaurant_id = restaurant.id)}}" method = 'post'>
+	<label>
+	<p>Name:</p>
+		<input type='text' size='30' name='name' placeholder='{{restaurant.name}}'>
+	</label>
+	<input type='submit' value='Edit'>
+
+</form>
+</body>
+</html>
